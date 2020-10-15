@@ -16,7 +16,7 @@
 
           
           if(color =="blue") {
-            story.innerHTML = "How basic."
+            story.innerHTML = "How basic.";
             
             
           } else {
