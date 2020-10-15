@@ -4,32 +4,27 @@
 // prints "hi" in the browser's dev tools console
 // console.log("hi");
 
-          var nombre = document.querySelector("#nombre");
-        var color = document.querySelector("#color");
-        var place = document.querySelector("#place");
-        var number = document.querySelector("#number");
-        var story = document.querySelector("#story");
-        var launch = document.querySelector("#launch");
-        var result = document.querySelector("#result");
-        launch.addEventListener("click", writeStory, false);
+let nombre = document.querySelector("#nombre");
+let color = document.querySelector("#color");
+let place = document.querySelector("#place");
+let number = document.querySelector("#number");
+let story = document.querySelector("#story");
+let launch = document.querySelector("#launch");
+let result = document.querySelector("#result");
+launch.addEventListener("click", writeStory, false);
 
-        function writeStory(){
-        var launchedStory = "";
-            launchedStory += "<p>Welcome, " + nombre.value + ". ";
-            launchedStory += "Only silly people choose " + color.value + " as their favorite color.</p>";
-            launchedStory += "<p>Is " + place.value + " your current place or your birth place.</p>";
-            launchedStory += "<p>By the way, " + number.value + " is your serial number.</p>";
+function writeStory() {
+  let launchedStory = "";
+  launchedStory += "<p>Welcome, " + nombre.value + ".</p>";
+  launchedStory += "<p>Your color is: " + color.value + "</p>";
+  launchedStory += "<p>Your place is: " + place.value + ".</p>";
+  launchedStory += "<p>Your favorite number is: " + number.value + ".</p>";
 
-           story.innerHTML = launchedStory;
-          
-          if(color.value=="blue") {
-            result.innerHTML = "How basic.";
-          
-            
-          } else {
-          result.innerHTML = "How wonderful.";
-          
-          
-          
-          }
-        }
+  story.innerHTML = launchedStory;
+
+  if (color.value == "blue") {
+    result.innerHTML = "How basic.";
+  } else {
+    result.innerHTML = "How wonderful.";
+  }
+}
