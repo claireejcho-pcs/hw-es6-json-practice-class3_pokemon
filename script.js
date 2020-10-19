@@ -4,6 +4,7 @@
 // prints "hi" in the browser's dev tools console
 // console.log("hi");
 
+
 let nombre = document.querySelector("#nombre");
 let color = document.querySelector("#color");
 let place = document.querySelector("#place");
@@ -22,9 +23,14 @@ function writeStory() {
 
   story.innerHTML = launchedStory;
 
-  if (color.value == "blue") {
+  if (color.value == "green") {
     result.innerHTML = "How basic.";
-  } else {
+  } 
+  else if (color.value == "red"){
+    result.innerHTML = "How bold.";
+    
+  }
+  else {
     result.innerHTML = "How wonderful.";
   }
 }
