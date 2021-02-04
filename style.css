@@ -10,10 +10,13 @@ h1 {
   color: #373fff;
 }
 
+div > img {
+  width: 60%;
+  
+}
 
-
-#result {
-  background-color: #FF33FF;
+#greeting {
+  background-color: lightgray;
   
   
 }
