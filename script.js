@@ -1,9 +1,9 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-let myName = document.querySelector("#my-name");
-let greeting = document.querySelector("#greeting");
-let clickMe = document.querySelector("#click-me");
+let myName = document.querySelector("#my-name"); // input field
+let greeting = document.querySelector("#greeting"); // empty div
+let clickMe = document.querySelector("#click-me"); // button
 
 clickMe.addEventListener("click", writeStory, false);
 
