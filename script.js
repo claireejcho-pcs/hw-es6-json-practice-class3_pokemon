@@ -10,10 +10,11 @@ clickMe.addEventListener("click", writeStory, false);
 console.log(typeof(myNumber));
 
 function random(number) { 
+parseFloat(number);  
 return Math.floor(Math.random() * number); 
 }
 
-let rando = random(myNumber);
+let rando = random(myNumber.value);
 
 function writeStory() {
   let launchedStory = "<p>Welcome, " + myName.value + ".</p>";
