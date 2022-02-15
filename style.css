@@ -1,19 +1,48 @@
-/* CSS files add styling rules to your content */
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  width: 800px;
+  margin: 0 auto;
 }
+
+h1, h2 {
+  font-family: 'Faster One', cursive;
+}
+
+/* header styles */
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-size: 4rem;
+  text-align: center;
 }
 
-div > img {
-  width: 60%;
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-#greeting {
-  background-color: lightgray;
+/* section styles */
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
 }
