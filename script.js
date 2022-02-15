@@ -4,8 +4,10 @@ let greeting = document.querySelector("#greeting"); // empty div
 let clickMe = document.querySelector("#click-me"); // button
 let myNumber = document.querySelector("#my-number");
 clickMe.addEventListener("click", writeStory, false);
+let random;
 
-function random(number) {
+
+random = (number) => {
   parseFloat(number);
   return Math.floor(Math.random() * number);
 }
@@ -22,7 +24,7 @@ function writeStory() {
   console.log(nameLength);
   let randoNameNumber = random(nameLength);
   let launchedStory = "<p>Welcome, " + myName + ".</p>";
-  launchedStory += `<p>Your favorite number is, ${rando} .</p>
+  launchedStory += `<p>Your favorite number is, ${rando}.</p>
     <p>Or maybe it's ${randoNameNumber}.</p>`;
 
   greeting.innerHTML = launchedStory;
