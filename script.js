@@ -39,7 +39,7 @@ async function populate() {
 
       myCard.className = "card";
       myCardContent.className = "card-container";
-      myImg.src = "../assets/"+monster.number+".jpg";
+      myImg.src = "assets/"+monster.number+".jpg";
       myH2.textContent = monster.name;
       myPara1.textContent = "Pokedex # "+monster.number;
       myPara2.textContent = "Type: "+ monster.type;
