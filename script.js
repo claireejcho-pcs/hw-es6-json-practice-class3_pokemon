@@ -1,6 +1,6 @@
 async function populate() {
 
-    const requestURL = '../fake_pokemon.json';
+    const requestURL = '/fake_pokemon.json';
     const request = new Request(requestURL);
 
     const response = await fetch(request);
