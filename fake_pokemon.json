@@ -45,6 +45,18 @@
         "Teleportation",
         "Interdimensional travel"
       ]
+    },
+    {
+      "name": "Squirtle",
+      "number": "005",
+      "type": "Water",
+      "powers": [
+        "Bubble",
+        "Withdraw",
+        "Water Gun",
+        "Rapid Spin",
+        "Aqua Tail"
+      ]
     }
   ]
 }

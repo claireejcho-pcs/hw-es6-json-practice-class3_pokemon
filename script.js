@@ -12,18 +12,18 @@ async function populate() {
   }
 
 
-  function populateHeader(obj) {
+  let populateHeader= (obj) => {
     const header = document.querySelector('header');
     const myH1 = document.createElement('h1');
-    myH1.textContent = "Pokemon of "+ obj['map']+" Region";
+    myH1.textContent = `Pokemon of ${obj['map']} Region`;
     header.appendChild(myH1);
 
     const myPara = document.createElement('p');
-    myPara.textContent = "Pokedex for Pokemon: "+ obj['gameVersion'] + " || Released: " + obj['year'];
+    myPara.textContent = `Pokedex for Pokemon: ${obj['gameVersion']} || Released: ${obj['year']}`;
     header.appendChild(myPara);
   }
 
-  function populatePokemon(obj) {
+  let populatePokemon = (obj) => {
     const section = document.querySelector('section');
     const monsters = obj['monsters'];
 
@@ -41,8 +41,8 @@ async function populate() {
       myCardContent.className = "card-container";
       myImg.src = "assets/"+monster.number+".jpg";
       myH2.textContent = monster.name;
-      myPara1.textContent = "Pokedex # "+monster.number;
-      myPara2.textContent = "Type: "+ monster.type;
+      myPara1.textContent = `Pokedex # ${monster.number}`;
+      myPara2.textContent = `Type: ${monster.type}`;
       myPara3.textContent = 'Attacks:';
 
       const superPowers = monster.powers;
